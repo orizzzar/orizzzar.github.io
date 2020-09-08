@@ -34,7 +34,7 @@ body {
 }
 
 
-p {
+.content p {
     margin-bottom: 3rem;
 }
 
@@ -43,32 +43,74 @@ p {
 }
 
 
-.profile p {
+.content p, .content li {
     text-align: justify;
     line-height: 1.5rem;
     letter-spacing: 0.15rem;
     word-spacing: 0.3rem;
+}
 
+.content p {
     margin: 0 0 1rem;
 }
 
-.profile p a {
+.content a {
     text-decoration: none;
     color: rgb(68, 185, 221);
 }
 
-.content p a:hover {
+.content a:hover {
     color: rgb(0, 80, 104);
 }
 
-.profile img {
+.content img {
     width: 100%;
     height: auto;
 }
 
-.profile img + p {
+.content img + p {
     color: rgb(107, 107, 107);
     text-align: center;
     font-size: 0.75rem;
     margin: 0;
+}
+
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collage .collage_column {
+    padding: 0 0.3rem; /* margin breaks 25% 25% 25% 25% */
+}
+
+.collage .collage_column img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 0.3rem 0;
+
+    box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.2);
+    transition: box-shadow 100ms linear, transform 100ms linear;
+}
+.collage .collage_column img:hover {
+    box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.4);
+    transform: scale(1.005);
+}
+
+@media screen and (min-width: 1050px) { /* this is MIN!! */
+    .collage .collage_column {
+        max-width: 25%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .collage .collage_column {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .collage .collage_column {
+        max-width: 100%;
+    }
 }
