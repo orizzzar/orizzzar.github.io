@@ -1,0 +1,39 @@
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collage .collage_column {
+    padding: 0 0.3rem;
+}
+
+.collage .collage_column img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 0.3rem 0;
+
+    box-shadow: 0px 0px 10px 1px rgb(0,0,0,0.2);
+    transition: box-shadow 100ms linear, transform 100ms linear;
+}
+.collage .collage_column img:hover {
+    box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.4);
+    transform: scale(1.005);
+}
+
+@media screen and (min-width: 1050px) { /* this is MIN!! */
+    .collage .collage_column {
+        max-width: 25%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .collage .collage_column {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .collage .collage_column {
+        max-width: 100%;
+    }
+}
