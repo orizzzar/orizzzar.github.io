@@ -10,12 +10,14 @@
 
 body {
     margin: 0; padding: 0;
-
     color: black;
     background-color: white;
 }
 
-
+.page {
+    display: flex;
+    flex-direction: column;
+}
 
 @media only screen and (min-width: 600px)
 {
@@ -113,4 +115,12 @@ body {
     .collage .collage_column {
         max-width: 100%;
     }
+}
+
+.footer {
+    text-align: center;
+    color: rgb(202, 202, 202);
+    font-size: 0.9rem;
+    width: inherit;
+    margin: auto 0 0 0 !important; /* TODO  fix !important */
 }
