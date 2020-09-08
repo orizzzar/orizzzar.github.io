@@ -1,0 +1,112 @@
+.sidebar ul.nav {
+    margin: 0; padding: 0; list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 3rem;
+}
+
+.sidebar ul.nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem 0.8rem 1rem 2rem;
+    text-align: left;
+
+}
+
+
+
+.sidebar ul.nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.sidebar ul.social_networks {
+    margin: 0; padding: 0; list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    margin: auto 1.2rem 3rem;
+
+}
+
+.sidebar ul.social_networks a {
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+}
+
+.sidebar ul.social_networks i {
+    transition: transform 50ms linear;
+}
+.sidebar ul.social_networks a:hover i {
+    transform: translateY(-0.2rem);
+    color: rgb(61, 61, 61);
+}
+
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    background-color: white;
+}
+@media only screen and (min-width: 600px)
+{
+    .sidebar {
+        width: 32vw;
+        max-width: 15rem;
+        height: 100vh;
+        flex-direction: column;
+        top: 0;
+
+        
+
+        box-shadow: 0px 6px 16px 0px rgb(0,0,0,0.2);
+        
+    }
+
+    .sidebar ul.nav a.active {
+        border-right: solid 5px rgb(68, 185, 221);
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    .sidebar ul.social_networks
+    {
+        display: none;
+    }
+    .sidebar ul.nav 
+    {
+        flex-direction: row;
+        
+        margin: auto 0 0 0;
+    }
+
+    .sidebar {
+        width: 100vw;
+        height: 3rem;
+        flex-direction: row;
+        
+        bottom: 0;
+        z-index: 1;
+    
+        box-shadow: 6px 0px 16px 0px rgb(0,0,0,0.2);
+    
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .sidebar ul.nav a {
+        padding: 1rem 0.5rem;
+        
+    }
+    .sidebar ul.nav a.active {
+        border-top: solid 5px rgb(68, 185, 221);
+    }
+}

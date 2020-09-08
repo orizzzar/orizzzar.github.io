@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0; padding: 0;
+
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (min-width: 600px)
+{
+    .page {
+        margin-left: 15rem;
+        padding: 2rem 10vw;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    .page {
+        margin-left: 0;
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+}
