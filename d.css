@@ -3,15 +3,18 @@
     font-size: 0.75rem;
     margin: auto; 
 
-    overflow: auto;
-    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.2);
+    width: 50vw;
+
+   overflow: auto;
 }
 
 .study_monitor table {
     width: 100%;
     height: auto;
-
     border-collapse: collapse;
+
+    
+    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.2);
 }
 
 .study_monitor th {
@@ -19,19 +22,23 @@
     color: white;
     text-align: center;
     padding: 0.3125rem 0.3125rem;
+    border-right: 1rem solid green
 }
 .study_monitor td{
     padding: 0.3125rem 0.3125rem 0.3125rem 1rem;
 }
-.study_monitor td{
-    border: 0.0625rem rgb(231, 231, 231) solid;
+.study_monitor td {
+    /* border: 0.0625rem rgb(231, 231, 231) solid; */
+    border: 1rem rgb(231, 231, 231) solid;
     background-color: rgb(255, 255, 255);
     color: black;
 }
 
-.study_monitor td:last-child {
-    border-right: none;
+td:last-child {
+    border-right: green 16px solid;
 }
+
+
 
 
 .study_monitor tbody > tr:first-child > td:first-child, .study_monitor .td_with_ec {
@@ -52,6 +59,13 @@
     content: "?";
     color: rgb(161, 161, 161);
 }
+
+
+.study_progress h2 {
+    margin-bottom: 0;
+}
+
+
 
 .progress_bar {
     width: 50vw;
@@ -90,7 +104,7 @@
 }
 
 .progress_bar > div > div.bar_nbsa {
-    background-color: rgb(176, 176, 182);
+    background-color: rgb(182, 176, 176);
     width: 75%;
 
     position: absolute;
@@ -120,19 +134,4 @@
 .relevant_links li a:hover {
     border-bottom: solid 1px rgb(68, 185, 221);;
     color: rgb(68, 185, 221);
-}
-
-
-
-
-@media only screen and (max-width: 700px) {
-    .study_monitor_with_header h2 + p::after {
-        content: "Try to scroll the table";
-    }
-
-    .study_monitor_with_header h2 + p {
-        font-size: 0.75rem;
-        margin-bottom: 0.25rem;
-        color: rgb(92, 92, 92);
-    }
 }

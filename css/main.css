@@ -19,19 +19,35 @@ body {
     flex-direction: column;
 }
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 1000px)
 {
     .page {
         margin-left: 15rem;
         padding: 2rem 10vw;
     }
 }
+
+@media only screen and (max-width: 1000px)
+{
+    .page {
+        margin-left: 15rem;
+        padding: 2rem 5vw;
+        font-size: 15px;
+    }
+}
 @media only screen and (max-width: 600px)
 {
     .page {
+        font-size: 14px;
         margin-left: 0;
         margin-bottom: 3rem;
         padding: 2rem;
+    }
+}
+@media only screen and (max-width: 300px)
+{
+    :root {
+        font-size: 12px;
     }
 }
 
