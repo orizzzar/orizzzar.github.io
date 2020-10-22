@@ -1,0 +1,82 @@
+.company {
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 5px 1fr 1fr;
+    grid-template-rows: repeat(3, auto) 5px;
+    grid-gap: 20px 30px;
+    grid-template-areas: 
+    "logo logo logo logo"
+    ". does culture ."
+    ". technologies technologies .";
+    
+    width: 700px;
+    border-bottom: 1px rgb(221, 221, 221) solid;
+
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+
+    letter-spacing: normal !important;
+    line-height: normal !important;
+}
+
+.company h2, .company h3, .company h4 {
+    margin: 0;
+}
+
+.company__logo {
+    grid-area: logo;
+
+    width: 100%;
+}
+.company__title {
+    grid-area: title;
+    /* It is better with just the logo */
+    display: none;
+
+    text-align: right;
+}
+.company__section--does {
+    grid-area: does;
+}
+.company__section--culture {
+    grid-area: culture;
+}
+.company__section--technologies {
+    grid-area: technologies;
+}
+
+.company__section {
+    text-align: justify;
+}
+
+.company__section__technologies {
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.company__section__technologies img {
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+
+    transition: all 50ms linear;
+    
+}
+.company__section__technologies img:hover {
+    transform: scale(1.1);
+}
+
+.citation {
+    text-decoration: none;
+    color: rgb(33, 150, 223);
+}
+
+.citation:hover {
+    text-decoration: underline;
+    color: rgb(108, 174, 213);
+}

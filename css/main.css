@@ -59,14 +59,14 @@ body {
 }
 
 
-.content p, .content li {
+.content > p, .content li {
     text-align: justify;
     line-height: 1.5rem;
     letter-spacing: 0.15rem;
     word-spacing: 0.3rem;
 }
 
-.content p {
+.content > p {
     margin: 0 0 1rem 0;
 }
 
