@@ -62,26 +62,39 @@
 
 }
 .company__section__technologies img {
-    max-width: 7rem;
-    max-height: 7rem;
+    max-width: 5rem;
+    max-height: 5rem;
     width: auto;
     height: auto;
 
     transition: all 50ms linear;
     
 }
+.company__section__technologies .img-larger img {
+    max-width: 9rem;
+    max-height: 9rem;
+    width: auto;
+    height: auto;
+}
+
 .company__section__technologies img:hover {
     transform: scale(1.1);
 }
 
-.citation {
+
+.citation, .link-what {
     text-decoration: none;
-    color: rgb(33, 150, 223);
+    color: rgb(83, 171, 226);
     
     font-weight: normal;
 }
 
-.citation:hover {
+.link-what {
+    font-weight: 600;
+    color: rgb(35, 93, 129);
+}
+
+.citation:hover, .link-what:hover {
     text-decoration: underline;
     color: rgb(108, 174, 213);
 }
