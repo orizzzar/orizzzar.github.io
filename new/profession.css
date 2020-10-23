@@ -1,3 +1,4 @@
+
 .company {
     margin: 0 auto;
 
@@ -10,10 +11,10 @@
     ". does culture ."
     ". technologies technologies .";
     
-    width: 700px;
-    border-bottom: 1px rgb(221, 221, 221) solid;
+    width: 100%;
+    /* border-bottom: 1px rgb(221, 221, 221) solid; */
 
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+    /* box-shadow: 0 0 20px 0 rgba(0,0,0,0.05); */
     font-family: 'Roboto Mono';
     font-size: 14px;
 
@@ -21,9 +22,6 @@
     line-height: normal !important;
 }
 
-.company h2, .company h3, .company h4 {
-    margin: 0;
-}
 
 .company__logo {
     grid-area: logo;
@@ -31,6 +29,7 @@
     width: 100%;
 }
 .company__title {
+    margin: 0;
     grid-area: title;
     /* It is better with just the logo */
     display: none;
@@ -51,16 +50,20 @@
     text-align: justify;
 }
 
+.company__section__title {
+    margin: 0;
+}
 .company__section__technologies {
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
 .company__section__technologies img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 7rem;
+    max-height: 7rem;
     width: auto;
     height: auto;
 
@@ -74,6 +77,8 @@
 .citation {
     text-decoration: none;
     color: rgb(33, 150, 223);
+    
+    font-weight: normal;
 }
 
 .citation:hover {
