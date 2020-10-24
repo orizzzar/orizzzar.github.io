@@ -4,12 +4,13 @@
 
     display: grid;
     grid-template-columns: 5px 1fr 1fr;
-    grid-template-rows: repeat(3, auto) 5px;
+    grid-template-rows: repeat(4, auto) 5px;
     grid-gap: 20px 30px;
     grid-template-areas: 
     "logo logo logo logo"
     ". does culture ."
-    ". technologies technologies .";
+    ". technologies technologies ."
+    ". roles roles .";
     
     width: 100%;
     /* border-bottom: 1px rgb(221, 221, 221) solid; */
@@ -77,7 +78,16 @@
     height: auto;
 }
 
-.company__section__technologies img:hover {
+.company__section__technologies span {
+    color: black;
+    display: inline-block;
+    font-size: 2rem;
+
+    transition: all 50ms linear;
+}
+
+.company__section__technologies img:hover,  
+.company__section__technologies span:hover {
     transform: scale(1.1);
 }
 
@@ -99,11 +109,6 @@ a.citation:hover, .link-what:hover {
     color: rgb(108, 174, 213);
 }
 
-span.citation {
-    color: rgb(70, 111, 114);
-    text-decoration: ;
-    font-weight: normal;
-}
 
 span.citation {
     position: relative;
@@ -140,3 +145,106 @@ span.citation {
   span.citation:hover .citation__text {
     visibility: visible;
   }
+  
+  /*
+  div class="company-role">
+    <h5 class="company-role__title">Android Software Engineer</h5>
+    <div class="company-role__abbreviation">SWE</div>
+    <p class="company-role__description">The main focus of this job is to develop new Android applications, add new components and improve/optimize existing ones. What exact feature to add/change is however not the job of SWE since there are other roles to do this.</p>
+</div> 
+  */
+
+
+
+/********************/
+/*** COMPANY ROLE ***/
+/********************/
+
+/* Section for roles. All roles + Title + (optional) some text */
+.company__section--roles {
+    grid-area: roles;
+}
+/* Container for all roles */
+.company__section__roles {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/* One role, with grid layout*/
+.company-role {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    grid-template-rows: min-content auto;
+    grid-template-areas: 
+    "abbreviation title"
+    ". description";
+    gap: 1rem 1rem;
+
+    padding: 2rem;
+}
+
+/* Role title. Like "Software Engineer" */
+.company-role__title {
+    grid-area: title;
+
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/* Role abbrebiation. Like "SWE" */
+.company-role__abbreviation {
+    grid-area: abbreviation;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+
+    color: rgb(187, 187, 187);
+
+}
+
+/* Role desciprtion */
+.company-role__description {
+    margin: 0;
+    grid-area: description;
+}
+
+/* hover */
+.company-role {
+    transition: background-color 100ms linear;
+}
+.company-role:hover {
+    background-color: rgb(255, 255, 255);
+}
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    .company-role {
+        width: 100%;
+        margin-bottom: 1px;
+        box-shadow: 0 2rem 0 calc(-2rem + 1px) rgb(226, 226, 226);
+    }
+    .company-role:first-child {
+        box-shadow: none;
+    }
+    
+}
+@media only screen and (min-width: 1200px) {
+    .company-role {
+        width: 50%;
+    }
+    .company-role:nth-child(odd) {
+        margin-right: 1px;
+        width: calc(49% - 1px);
+        box-shadow: 2rem 0 0 calc(-2rem + 1px) rgb(226, 226, 226);
+    }
+    .company-role:last-child:nth-child(odd) {
+        width: 100%;
+        box-shadow: 0 2rem 0 calc(-2rem + 1px) rgb(226, 226, 226);
+        margin: 0px auto 0px;
+    }
+}
