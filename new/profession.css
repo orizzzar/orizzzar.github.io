@@ -30,6 +30,20 @@
 .company__section--culture      {grid-area: culture}
 .company__section--technologies {grid-area: technologies}
 
+/* Responsive Company Layout */
+@media only screen and (max-width: 1000px) {
+    .company {
+        grid-template-rows: repeat(6, auto) 5px;
+        grid-template-areas: 
+        "title title title title"
+        "logo logo logo logo"
+        ". does does ."
+        ". culture culture ."
+        ". technologies technologies ."
+        ". roles roles .";
+    }
+}
+
 /* So big logo don't overflow */
 .company__logo {
     width: 100%;
@@ -60,8 +74,8 @@
 
 /* For technologies with LOGO */
 .company__section__technologies img {
-    max-height: 4.5rem;
-    height: auto;
+    height: 3.75vw;
+    min-height: 3rem;
 
     transition: transform 50ms linear;
 }
@@ -215,7 +229,7 @@ span.citation {
     background-color: rgb(255, 255, 255);
 }
 
-/* Responsive */
+/* Responsive for Roles */
 @media only screen and (max-width: 1200px) {
     .company-role {
         width: 100%;

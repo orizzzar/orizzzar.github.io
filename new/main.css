@@ -1,35 +1,34 @@
 /*** Body, Html, All ***/
-* {
-    box-sizing: border-box;
-}
+*       { box-sizing: border-box }
+body    { margin: 0; padding: 0 }
 
 :root {
-    /* Font Styling */
+    /* Styling fonts for whole page */
     font-family: "Montserrat";
     font-size: 16px;
     font-weight: 400;
 }
 
+/* A little gray background for content */
 body {
-    margin: 0; padding: 0;
-    color: black;
     background-color: rgb(250, 250, 250);
 }
 
-
-/*** Page and typography children ***/
+/* Content part (no leftbar) */
 .page {
-    padding: 2rem 10vw;
+    padding: 2rem 15vw;
 
     /* For leftbar */
     margin-left: 15rem;
-    min-height: 100vh;
 
     /* For footer */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+
+/*** Typography for main content ***/
 .page > h1,
 .page > h2,
 .page > h3,
@@ -43,14 +42,12 @@ body {
     margin-top: 4rem;
     margin-bottom: 1rem;
 }
-
 .page > p {
     margin: 0;
     margin-bottom: 1rem;
 }
 
-
-
+/*** Rarer used typography, for images and links ***/
 .page__image {
     width: 100%;
     height: auto;
@@ -70,7 +67,7 @@ body {
     border-bottom: solid 1px rgb(0, 80, 104);
 }
 
-
+/*** Footer ***/
 .footer {
     text-align: center;
     color: rgb(214, 214, 214);
@@ -79,126 +76,146 @@ body {
     margin-top: auto;
 }
 
-
+/***************/
 /*** Leftbar ***/
+/***************/
 
 /* Static */
 .leftbar {
+    /* To display social links at the bottom */
     display: flex;
     flex-direction: column;
 
+    /* Positioning and sizing */
     width: 15rem;
     height: 100vh;
-
     position: fixed;
-    z-index: 100;
+    z-index: 2;
     left: 0;
+    top: 0;
 
+    /* Styling */
     box-shadow: 0 0 1.8rem 0 rgba(0,0,0,0.1);
     background-color: white;
 }
 
 .nav-menu {
-    display: flex;
-    flex-direction: column;
+    /* Gap above nav-menu */
     margin-top: 3rem;
 }
 
 .nav-menu__link {
     display: inline-block;
+    width: 100%;
     padding: 1rem 2rem;
 
+    /* Styling */
     text-decoration: none;
     font-size: 1rem;
-
     color: black;
 }
 
 .social-links {
+    /* Positioning links withing the whole leftbar */
     margin: auto auto 3.5rem;
+
+    /* To display links as a row with no spaces between */
     display: flex;
     flex-direction: row;
     justify-content: center;
 
 }
 .social-links__link {
+    /* Sizing */
     width: 3.5rem;
     height: 3rem;
+    
+    /* Styling */
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    
+    /* To center icon in a clickable container */
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 1.3rem;
-    text-decoration: none;
-
-    color: rgb(90, 90, 90);
 }
-/* Dynamic */
 
+/*** Hover ***/
+/* Hover over menu link */
 .nav-menu__link:hover {
     color: white;
     background-color: black;
     border-right: 5px solid rgb(99, 138, 150);
 }
+/* Hover over social link */
+.social-links__link i       { transition: transform 100ms linear }
+.social-links__link:hover i { transform: translateY(-4px) }
 
-.social-links__link i {
-    transition: transform 100ms linear;
-}
-.social-links__link:hover i {
-    transform: translateY(-4px);
-}
 
-/* Modified */
+/*** Modified ***/
+/* Current page */
 .nav-menu__link.nav-menu__link--active {
     border-right: 5px solid rgb(68, 185, 221);
 }
+/* Separate link from above links with a gap and a line */
 .nav-menu__link--separate-top {
     margin-top: 1.2rem;
     border-top: 2px solid rgb(241, 241, 241);
 }
 
-/* RESPONSIVE */
-
-
-.leftbar .leftbar__icon {
-    display: none;
+/******************/
+/*** RESPONSIVE ***/
+/******************/
+@media only screen and (max-width: 1100px) {
+    .page {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
 }
-
-.page {
-    transition: filter 100ms linear;
-}
-
 @media only screen and (max-width: 768px) {
-    .leftbar:not(:active) .nav-menu, .leftbar:not(:active) .social-links {
-        display: none;
+    /* Move content behind the defaultly-hidden leftbar and decrease padding */
+    .page {
+        padding: 4rem 5vw 2rem;
+        margin-left: 0;
+    }
+
+    /* Move leftbar away */
+    .leftbar {
+        transform: translateX(-15rem);
+        transition: transform 75ms linear;
+    }
+
+    /* Move leftbar back */
+    .leftbar.leftbar--opened {
+        transform: translateX(0);
     }
     
-    .leftbar:not(:active) .leftbar__icon {
-        display: block;
-        color: rgb(68, 185, 221);
+    /* Darken page when leftbar is opened */
+    .leftbar--opened + .leftbar-open {
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        transition: background-color 100ms linear;
+        
+        background-color: rgba(0, 0, 0, 0.74);
+    }
+
+    /* Position and style opening button */
+    .leftbar-open {
+        /* Positioning */
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1;
+
+        /* Sizing */
         font-size: 1.7rem;
-        padding: 1rem;
+
+        /* Styling */
+        color: rgb(68, 185, 221);
+        transition: color 50ms linear;
     }
-
-    .leftbar:not(:active) {    
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        box-shadow: none;
-    }
-
-    .leftbar:active + .page {
-        filter: invert(100%);
-    }
-
-    .page {
-        margin-left: 0;
-        padding: 4rem 4rem 2rem;
-
-    }
-
-    .leftbar:active .nav-menu, .leftbar:active .social-links {
-        display: flex;
-    }
-
+    .leftbar-open:hover { color: rgb(128, 207, 221) } 
 }
