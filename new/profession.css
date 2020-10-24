@@ -85,15 +85,18 @@
 /*** Citation and what-link ***/
 /******************************/
 
-a.citation, .what-link {
+/* Link Citation */
+a.citation{
     text-decoration: none;
-    color: rgb(83, 171, 226);
     
     font-weight: normal;
+    color: rgb(83, 171, 226);
 }
 
 .what-link {
-    font-weight: 600;
+    text-decoration: none;
+    
+    font-weight: 500;
     color: rgb(35, 93, 129);
 }
 

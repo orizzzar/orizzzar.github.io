@@ -1,9 +1,10 @@
-/* Body, Html, All */
+/*** Body, Html, All ***/
 * {
     box-sizing: border-box;
 }
 
 :root {
+    /* Font Styling */
     font-family: "Montserrat";
     font-size: 16px;
     font-weight: 400;
@@ -16,7 +17,7 @@ body {
 }
 
 
-/*** Page and typography children***/
+/*** Page and typography children ***/
 .page {
     padding: 2rem 10vw;
 
@@ -24,8 +25,9 @@ body {
     margin-left: 15rem;
 }
 
-
-.page > h2, .page > h3 {
+.page > h1,
+.page > h2,
+.page > h3 {
     text-align: justify;
     line-height: 1.5rem;
     letter-spacing: 0.15rem;
@@ -35,12 +37,11 @@ body {
     margin-top: 4rem;
     margin-bottom: 1rem;
 }
+
 .page > p {
     margin: 0;
     margin-bottom: 1rem;
 }
-
-
 
 
 
@@ -64,11 +65,11 @@ body {
 }
 
 
-
 .footer {
     text-align: center;
     color: rgb(214, 214, 214);
     font-size: 0.85rem;
+
 }
 
 
