@@ -1,24 +1,20 @@
-
+/* Container for ONE company */
 .company {
-    margin: 0 auto;
-
+    /* Children Layout */
     display: grid;
-    grid-template-columns: 5px 1fr 1fr;
+    grid-template-columns: 5px 1fr 1fr 5px;
     grid-template-rows: repeat(4, auto) 5px;
     grid-gap: 20px 30px;
     grid-template-areas: 
+    "title title title title"
     "logo logo logo logo"
     ". does culture ."
     ". technologies technologies ."
     ". roles roles .";
     
-    width: 100%;
-    /* border-bottom: 1px rgb(221, 221, 221) solid; */
-
-    /* box-shadow: 0 0 20px 0 rgba(0,0,0,0.05); */
+    /* Font styling */
     font-family: 'Roboto Mono';
     font-size: 14px;
-
     letter-spacing: normal !important;
     line-height: normal !important;
 }
@@ -55,12 +51,15 @@
     margin: 0;
 }
 .company__section__technologies {
-    padding: 35px 0;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
+}
+.company__section__technologies a {
+    margin: 1rem;   
 }
 .company__section__technologies img {
     max-width: 5rem;
@@ -145,19 +144,13 @@ span.citation {
   span.citation:hover .citation__text {
     visibility: visible;
   }
-  
-  /*
-  div class="company-role">
-    <h5 class="company-role__title">Android Software Engineer</h5>
-    <div class="company-role__abbreviation">SWE</div>
-    <p class="company-role__description">The main focus of this job is to develop new Android applications, add new components and improve/optimize existing ones. What exact feature to add/change is however not the job of SWE since there are other roles to do this.</p>
-</div> 
-  */
+
+
 
 
 
 /********************/
-/*** COMPANY ROLE ***/
+/*** COMPANY ROLES ***/
 /********************/
 
 /* Section for roles. All roles + Title + (optional) some text */
@@ -190,6 +183,10 @@ span.citation {
     margin: 0;
     font-size: 1.2rem;
     text-align: left;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 /* Role abbrebiation. Like "SWE" */
@@ -197,7 +194,7 @@ span.citation {
     grid-area: abbreviation;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     font-size: 1rem;
@@ -221,6 +218,7 @@ span.citation {
 .company-role:hover {
     background-color: rgb(255, 255, 255);
 }
+
 /* Responsive */
 @media only screen and (max-width: 1200px) {
     .company-role {
@@ -246,5 +244,8 @@ span.citation {
         width: 100%;
         box-shadow: 0 2rem 0 calc(-2rem + 1px) rgb(226, 226, 226);
         margin: 0px auto 0px;
+    }
+    .company-role:first-child:last-child {
+        box-shadow: none;
     }
 }
