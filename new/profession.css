@@ -82,7 +82,7 @@
 }
 
 
-.citation, .link-what {
+a.citation, .link-what {
     text-decoration: none;
     color: rgb(83, 171, 226);
     
@@ -94,7 +94,49 @@
     color: rgb(35, 93, 129);
 }
 
-.citation:hover, .link-what:hover {
+a.citation:hover, .link-what:hover {
     text-decoration: underline;
     color: rgb(108, 174, 213);
 }
+
+span.citation {
+    color: rgb(70, 111, 114);
+    text-decoration: ;
+    font-weight: normal;
+}
+
+span.citation {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color: rgb(56, 56, 56);
+  }
+
+  
+  
+  span.citation .citation__text {
+    visibility: hidden;
+    width: 100%;
+    background-color: rgb(157, 204, 216);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 1px;
+    font-weight: 500;
+
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5);
+   
+    
+    position: absolute;
+    z-index: 1;
+
+    
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50%;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  span.citation:hover .citation__text {
+    visibility: visible;
+  }
