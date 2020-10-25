@@ -9,45 +9,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400&amp;family=Roboto+Mono:ital,wght@0,200;0,400;1,400&amp;family=Roboto:ital,wght@0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
 
     <!-- Import CSS -->
-    <link rel="stylesheet" href="profession.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/css/profession.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     
     <!-- Import FA Icons -->
     <script src="https://kit.fontawesome.com/0520512e82.js" crossorigin="anonymous"></script>
 
     <!-- Import JS -->
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
-    
+
+    <!-- Sidebar at the left - Leftbar -->
     <aside id="leftbar" class="leftbar">
+        <!-- Navigational Menu -->
         <div class="nav-menu">
-            <a class="nav-menu__link" href="index.html"><span>Profile</span></a>
-            <a class="nav-menu__link" href="index.html"><span>Home</span></a>
-            <a class="nav-menu__link" href="index.html"><span>Dashboard</span></a>
-            <a class="nav-menu__link" href="index.html"><span>FAQ</span></a>
-            <a class="nav-menu__link nav-menu__link--separate-top" href="index.html"><span>Motivation</span></a>
-            <a class="nav-menu__link nav-menu__link--active" href="index.html"><span>Profession</span></a>
+            <a class="nav-menu__link" href="profile.html"><span>Profile</span></a>
+            <a class="nav-menu__link" href="home.html"><span>Home</span></a>
+            <a class="nav-menu__link" href="dashboard.html"><span>Dashboard</span></a>
+            <a class="nav-menu__link" href="faq.html"><span>FAQ</span></a>
+            <a class="nav-menu__link nav-menu__link--separate-top" href="motivation.html"><span>Motivation</span></a>
+            <a class="nav-menu__link nav-menu__link--active" href="profession.html"><span>Profession</span></a>
             
         </div>
-
+        <!-- VK, Facebook and Instagram links -->
         <div class="social-links">
             <a class="social-links__link" target="_blank" href="https://vk.com/id95657334"><i class="fab fa-vk"></i></a>
             <a class="social-links__link" target="_blank" href="https://www.facebook.com/profile.php?id=100010090093391"><i class="fab fa-facebook-f"></i></a>
             <a class="social-links__link" target="_blank" href="https://www.instagram.com/malbertodicabria"><i class="fab fa-instagram"></i></a>
-        </ul>
         </div>
     </aside>
+    <!-- Button to open leftbar when the screen is small -->
     <i id="leftbar-open" class="leftbar-open fas fa-bars"></i>
+
 
     <div class="page">
         <h1>Profession</h1>
         <p>Hello! Below you can find a research I made about ICT companies out there. For every company there is a brief description of what this company does, some words about its culture, few examples of technologies this company uses and a little list of roles/jobs in there. Enjoy reading!</p>
         
+
+        <!-- Facebook -->
         <section class="company">
             <h3 class="company__title">1. Facebook, Inc.</h3>
-            <img class="company__logo" src="imgs_profession/facebook_2015_logo.jpg" alt="Facebook Logo">
-    
+            <img class="company__logo" src="assets/img/profession/facebook/logo-facebook.svg" alt="Facebook Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Facebook Inc. is one of the largest technology companies (<a class="citation" href="https://en.wikipedia.org/wiki/Facebook,_Inc.">"Facebook, Inc.", n.d.</a>). Its flagship is Facebook social media service, but the company also owns and maintains other products such as Instagram, WhatsApp, Oculus VR, Giphy, and more<br>(<a class="citation" href="https://en.wikipedia.org/wiki/Facebook,_Inc.">"Facebook, Inc.", n.d.</a>;<a class="citation" href="https://en.wikipedia.org/wiki/Facebook">"Facebook", n.d.</a>)</p>
@@ -59,10 +63,10 @@
             <section class="company__section company__section--technologies">
                 <h4 class="company__section__title">Some technologies (<a class="citation" href="https://www.pingdom.com/blog/the-software-behind-facebook/">pingdom.com, 2019</a>)</h4>
                 <div class="company__section__technologies">
-                    <a href="https://en.wikipedia.org/wiki/PHP"><img src="imgs_profession/logo-php.svg" alt="PHP LOGO"></a>
-                    <a href="https://en.wikipedia.org/wiki/HHVM"><img src="imgs_profession/logo-hhvm.png" alt="HHVM logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/Apache_Cassandra"><img src="imgs_profession/logo-cassandra.png" alt="APACHE CASSANDRA LOGO"></a>
-                    <a href="https://en.wikipedia.org/wiki/Linux"><img src="imgs_profession/logo-linux.png" alt="LINUX LOGO"></a>
+                    <a href="https://en.wikipedia.org/wiki/PHP"><img src="assets/img/profession/facebook/logo-php.svg" alt="PHP Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/HHVM"><img src="assets/img/profession/facebook/logo-hhvm.png" alt="HHVM Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Apache_Cassandra"><img src="assets/img/profession/facebook/logo-cassandra.png" alt="Apache Cassandra Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Linux"><img src="assets/img/profession/facebook/logo-linux.png" alt="Linux Logo"></a>
                 </div>
             </section>
             <section class="company__section company__section--roles">
@@ -88,10 +92,10 @@
         </section>
 
 
+        <!-- Wargaming -->
         <section class="company">
             <h3 class="company__title">2. Wargaming Group Limited</h3>
-            <img class="company__logo" src="imgs_profession/wargaming/logo-wargaming.jpg" alt="Wargaming Logo">
-    
+            <img class="company__logo" src="assets/img/profession/wargaming/logo-wargaming.png" alt="Wargaming Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Wargaming is a game-developing company. It was founded in Minsk (which is my hometown), and headquartered in Nicosia, Cyprus (the place I lived for 6 years). It's most famous creation is <a class="what-link" href="https://en.wikipedia.org/wiki/World_of_Tanks">World Of Tanks</a>, but they also have developed other games, some of them are alost popular as WoT - <a class="what-link" href="https://en.wikipedia.org/wiki/World_of_Warships">World of Warships</a> and <a class="what-link" href="https://en.wikipedia.org/wiki/World_of_Warplanes">World of Warplanes</a>. (<a href="https://en.wikipedia.org/wiki/Wargaming_(company)" class="citation">"Wargaming (company)", n.d.</a>)</p>
@@ -103,10 +107,10 @@
             <section class="company__section company__section--technologies">
                 <h4 class="company__section__title">Some technologies</h4>
                 <div class="company__section__technologies">
-                    <a href="https://en.wikipedia.org/wiki/BigWorld"><img src="imgs_profession/wargaming/logo-big-world.jpg" alt="Big World Technology Logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img src="imgs_profession/wargaming/logo-python.png" alt="Python Logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/Adobe_Flash"><img src="imgs_profession/wargaming/logo-flash.png" alt="Flash logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/C%2B%2B"><img src="imgs_profession/wargaming/logo-cpp.png" alt="C++ logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/BigWorld"><img src="assets/img/profession/wargaming/logo-big-world.jpg" alt="Big World Technology Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img src="assets/img/profession/wargaming/logo-python.png" alt="Python Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Adobe_Flash"><img src="assets/img/profession/wargaming/logo-flash.png" alt="Flash Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/C%2B%2B"><img src="assets/img/profession/wargaming/logo-cpp.png" alt="C++ Logo"></a>
                 </div>
             </section>
             <section class="company__section company__section--roles">
@@ -121,11 +125,11 @@
             </section>
         </section>
 
-        
+
+        <!-- Apptension -->
         <section class="company">
             <h3 class="company__title">3. Apptension</h3>
-            <img class="company__logo" src="imgs_profession/apptension/logo-apptension.png" alt="Apptension Logo">
-    
+            <img class="company__logo" src="assets/img/profession/apptension/logo-apptension.png" alt="Apptension Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Apptension is a relatively small IT company from Poland. However, it is a quite technological company which develops high-quality products for their clients. The workstyle is closely similar to that of Macaw - they develop the product with the client and assure that it will succeed. (<a href="https://apptension.com/how-we-work" class="citation">"How we work", n.d.</a>)</p>
@@ -137,11 +141,11 @@
             <section class="company__section company__section--technologies">
                 <h4 class="company__section__title">Some technologies</h4>
                 <div class="company__section__technologies">
-                    <a href="https://en.wikipedia.org/wiki/Redux_(JavaScript_library)"><img src="imgs_profession/apptension/logo-redux.png" alt="Redux logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/CSS"><img src="imgs_profession/apptension/logo-css.png" alt="CSS logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="imgs_profession/apptension/logo-js.png" alt="Javascript logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/HTML"><img src="imgs_profession/apptension/logo-html.png" alt="HTML logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/React_(web_framework)"><img src="imgs_profession/apptension/logo-react.png" alt="React logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Redux_(JavaScript_library)"><img src="assets/img/profession/apptension/logo-redux.png" alt="Redux Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/CSS"><img src="assets/img/profession/apptension/logo-css.png" alt="CSS Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="assets/img/profession/apptension/logo-js.png" alt="Javascript Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/HTML"><img src="assets/img/profession/apptension/logo-html.png" alt="HTML Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/React_(web_framework)"><img src="assets/img/profession/apptension/logo-react.png" alt="React Logo"></a>
                 </div>
             </section>
             <section class="company__section company__section--roles">
@@ -154,15 +158,13 @@
                     </div>
                 </div>
             </section>
-
         </section>
         
 
-        
+        <!-- Google -->
         <section class="company">
             <h3 class="company__title">4. Google, LLC</h3>
-            <img class="company__logo" src="imgs_profession/google/logo-google.jpg" alt="Google Logo">
-    
+            <img class="company__logo" src="assets/img/profession/google/logo-google.jpg" alt="Google Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Google, LLC specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft. (<a href="https://en.wikipedia.org/wiki/Google" class="citation">"Google", n.d</a>)</p>
@@ -175,10 +177,10 @@
                 <h4 class="company__section__title">Some technologies</h4>
                 Since Google is an extremely big company that provides a lot of services it uses a lot of technologies - some of which are even developed by google.
                 <div class="company__section__technologies">
-                    <a href="https://en.wikipedia.org/wiki/Android_(operating_system)"><img src="imgs_profession/google/logo-android.png" alt="Android Logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/Go_(programming_language)"><img src="imgs_profession/google/logo-go.png" alt="Go logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img src="imgs_profession/google/logo-python.png" alt="Python Logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/C%2B%2B"><img src="imgs_profession/google/logo-cpp.png" alt="C++ logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Android_(operating_system)"><img src="assets/img/profession/google/logo-android.png" alt="Android Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Go_(programming_language)"><img src="assets/img/profession/google/logo-go.png" alt="Go Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img src="assets/img/profession/google/logo-python.png" alt="Python Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/C%2B%2B"><img src="assets/img/profession/google/logo-cpp.png" alt="C++ Logo"></a>
                 </div>
             </section>
             <section class="company__section company__section--roles">
@@ -193,11 +195,11 @@
             </section>
         </section>
 
-       
+
+       <!-- Mail.ru -->
         <section class="company">
             <h3 class="company__title">5. Mail.Ru Group, ООО</h3>
-            <img class="company__logo" src="imgs_profession/mailru/logo-mailru.png" alt="Mail.ru Logo">
-    
+            <img class="company__logo" src="assets/img/profession/mailru/logo-mailru.png" alt="Mail.ru Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Mail.ru is a huge Russian IT company. Its first product was an e-mail service, but then the company expanded and bought a lot of other Russian IT companies, even VKontakte - Russian Facebook. (<a href="https://ru.wikipedia.org/wiki/Mail.ru_Group" class="citation">"Mail.ru", n.d.</a>)</p>
@@ -209,8 +211,8 @@
             <section class="company__section company__section--technologies">
                 <h4 class="company__section__title">Some technologies</h4>
                 <div class="company__section__technologies">
-                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><img src="imgs_profession/mailru/logo-java.png" alt=""></a>
-                    <a href="https://en.wikipedia.org/wiki/PHP"><img src="imgs_profession/mailru/logo-php.svg" alt="PHP LOGO"></a>
+                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><img src="assets/img/profession/mailru/logo-java.png" alt=""></a>
+                    <a href="https://en.wikipedia.org/wiki/PHP"><img src="assets/img/profession/mailru/logo-php.svg" alt="PHP LOGO"></a>
                     <a href="https://ru.wikipedia.org/wiki/KPHP"><span>KPHP</span></a>
                 </div>
             </section>
@@ -231,12 +233,14 @@
             </section>
         </section>
 
+
         <h2>Extra: Companies from the presentations</h2>
         
+
+        <!-- Macaw -->
         <section class="company">
             <h3 class="company__title">1. Macaw</h3>
-            <img class="company__logo" src="imgs_profession/logo-macaw.jpg" alt="Macaw Logo">
-    
+            <img class="company__logo" src="assets/img/profession/macaw/logo-macaw.png" alt="Macaw Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Macaw helps other companies to solve complicated problems related to IT and business. They not only make some kind of product for their client but also take responsibility to make sure that this product solves the problem completely. Macaw highly involves (challenges) the client in working on the solution. <br>(<span class="citation">Marc Lelijveld, 2020<span class="citation__text">Marc Lelijveld is a Data & Analytics Consultant at Macaw. He gave a presentation of his company on <em>30-09-2020</em>, specially for HZ University.</span><br></span>)</p>
@@ -248,10 +252,10 @@
             <section class="company__section company__section--technologies">
                 <h4 class="company__section__title">Some technologies</h4>
                 <div class="company__section__technologies">
-                    <a href="https://powerplatform.microsoft.com/en-us/"><img src="imgs_profession/logo-ms-power-platform.jpg" alt="MS Power Platform Logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/SharePoint"><img src="imgs_profession/logo-sharepoint.jpg" alt="SharePoint Logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/Near-field_communication"><img src="imgs_profession/logo-nfc.png" alt="NFC logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/Microsoft_Azure"><img src="imgs_profession/macaw/logo-azure.png" alt="Azure logo"></a>
+                    <a href="https://powerplatform.microsoft.com/en-us/"><img src="assets/img/profession/macaw/logo-ms-power-platform.jpg" alt="MS Power Platform Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/SharePoint"><img src="assets/img/profession/macaw/logo-sharepoint.jpg" alt="SharePoint Logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Near-field_communication"><img src="assets/img/profession/macaw/logo-nfc.png" alt="NFC logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/Microsoft_Azure"><img src="assets/img/profession/macaw/logo-azure.png" alt="Azure logo"></a>
                 </div>
             </section>
             <section class="company__section company__section--roles">
@@ -272,10 +276,10 @@
         </section>
 
 
-        
+        <!-- Your Surprise -->
         <section class="company">
             <h3 class="company__title">2. Your Surprise</h3>
-            <img class="company__logo" src="imgs_profession/your-surprise/logo-your-surprise.png" alt="Your Surprise Logo">
+            <img class="company__logo" src="assets/img/profession/your-surprise/logo-your-surprise.png" alt="Your Surprise Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Your surprise is a company located in Zeeland and its flagship is creating personalized gifts. It is not exactly an IT company but it has its own IT branch for IT stuff (for example, to create and manage the website) and don't rely on third-party companies to do that. Your surprise also provides IT-related internships that students can take.<br>(<span class="citation">Arne Timmerman, 2020<span class="citation__text">Arne Timmerman is a CTO at Your Surprise, he did a presentation of the company on <em>02-10-2020</em> specially for HZ university.</span></span>)</p>
@@ -287,11 +291,11 @@
             <section class="company__section company__section--technologies">
                 <h4 class="company__section__title">Some technologies</h4>
                 <div class="company__section__technologies">
-                    <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)"><img src="imgs_profession/your-surprise/logo-sass.jpg" alt="SASS logo"></a>
-                    <a href="https://en.wikipedia.org/wiki/PHP"><img src="imgs_profession/your-surprise/logo-php.svg" alt="PHP LOGO"></a>
-                    <a href="https://en.wikipedia.org/wiki/javascript"><img src="imgs_profession/your-surprise/logo-js.png" alt="Javascript LOGO"></a>
-                    <a href="https://en.wikipedia.org/wiki/Docker_(software)"><img src="imgs_profession/your-surprise/logo-docker.png" alt="Docker LOGO"></a>
-                    <a href="https://en.wikipedia.org/wiki/Vue.js"><img src="imgs_profession/your-surprise/logo-vuejs.png" alt="Vue.js LOGO"></a>    
+                    <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)"><img src="assets/img/profession/your-surprise/logo-sass.jpg" alt="SASS logo"></a>
+                    <a href="https://en.wikipedia.org/wiki/PHP"><img src="assets/img/profession/your-surprise/logo-php.svg" alt="PHP LOGO"></a>
+                    <a href="https://en.wikipedia.org/wiki/javascript"><img src="assets/img/profession/your-surprise/logo-js.png" alt="Javascript LOGO"></a>
+                    <a href="https://en.wikipedia.org/wiki/Docker_(software)"><img src="assets/img/profession/your-surprise/logo-docker.png" alt="Docker LOGO"></a>
+                    <a href="https://en.wikipedia.org/wiki/Vue.js"><img src="assets/img/profession/your-surprise/logo-vuejs.png" alt="Vue.js LOGO"></a>    
                 </div>
             </section>
             <section class="company__section company__section--roles">
@@ -306,10 +310,11 @@
             </section>
         </section>
 
-        
+
+        <!-- Veracode -->
         <section class="company">
             <h3 class="company__title">3. Veracode</h3>
-            <img class="company__logo" src="imgs_profession/imgs-veracode/logo-veracode.png" alt="Veracode Logo">
+            <img class="company__logo" src="assets/img/profession/veracode/logo-veracode.png" alt="Veracode Logo">
             <section class="company__section company__section--does">
                 <h4 class="company__section__title">What the company does</h4>
                 <p class="comapany__section__text">Veracode is an application security company. It provides services for analyzing other software code for security leaks. It's not independent (owned by Broadcom), but a big company with offices all across the world. (<a href="https://en.wikipedia.org/wiki/Veracode" class="citation">"Veracode", n.d.</a>)</p>
@@ -333,6 +338,9 @@
                 </div>
             </section>
         </section>
+
+
+        <!-- Footer -->
         <footer class="footer">*** Made by Iosif ***</footer>
     </div>
 </body>

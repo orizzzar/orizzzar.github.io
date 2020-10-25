@@ -33,7 +33,6 @@ body {
 .page > h2,
 .page > h3,
 .page > p {
-    text-align: justify;
     line-height: 1.5rem;
     letter-spacing: 0.15rem;
     word-spacing: 0.3rem;
@@ -43,6 +42,7 @@ body {
     margin-bottom: 1rem;
 }
 .page > p {
+    text-align: justify;
     margin: 0;
     margin-bottom: 1rem;
 }
