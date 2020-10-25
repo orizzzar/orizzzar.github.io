@@ -157,10 +157,14 @@ body {
 
 /*** Hover ***/
 /* Hover over menu link */
-.nav-menu__link:hover {
+.nav-menu .nav-menu__link:hover {
     color: white;
-    background-color: black;
-    border-right: 5px solid rgb(99, 138, 150);
+    background-color: rgb(67, 111, 124);
+    border-right: 5px solid rgb(216, 216, 216);
+}
+.nav-menu .nav-menu__link--separate-top:hover,
+.nav-menu__link--separate-top ~ .nav-menu__link:hover {
+    background-color: rgb(190, 63, 63);
 }
 /* Hover over social link */
 .social-links__link i       { transition: transform 100ms linear }
@@ -170,8 +174,14 @@ body {
 /*** Modified ***/
 /* Current page */
 .nav-menu__link.nav-menu__link--active {
-    border-right: 5px solid rgb(68, 185, 221);
+    border-right: 5px solid rgb(59, 156, 185);
 }
+
+.nav-menu__link--separate-top.nav-menu__link--active,
+.nav-menu__link--separate-top ~ .nav-menu__link.nav-menu__link--active {
+    border-right: 5px solid rgb(190, 63, 63);
+}
+
 /* Separate link from above links with a gap and a line */
 .nav-menu__link--separate-top {
     margin-top: 1.2rem;
