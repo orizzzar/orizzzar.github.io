@@ -36,23 +36,31 @@ body {
     line-height: 1.5rem;
     letter-spacing: 0.15rem;
     word-spacing: 0.3rem;
-
     margin: 0;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
 }
+
+.page > h1 {
+    margin-bottom: 3rem;
+}
+
+.page > h2,
+.page > h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 .page > p {
     text-align: justify;
-    margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 /*** Rarer used typography, for images and links ***/
 .page__image {
     width: 100%;
     height: auto;
+    box-shadow: 0px 0px 16px 2px rgb(0,0,0,0.2)
 }
-.page__image-name {
+.page .page__image-name {
     color: rgb(107, 107, 107);
     text-align: center;
     font-size: 0.75rem;
