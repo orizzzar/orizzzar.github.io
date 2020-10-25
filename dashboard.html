@@ -3,238 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dashboard</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>Profession</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:ital,wght@0,200;0,400;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="/css/dashboard.css">
-    <link rel="stylesheet" href="css/icons.css">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400&amp;family=Roboto+Mono:ital,wght@0,200;0,400;1,400&amp;family=Roboto:ital,wght@0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="assets/css/profession.css">
+    <link rel="stylesheet" href="assets/css/collage.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     
+    <!-- Import FA Icons -->
+    <script src="https://kit.fontawesome.com/0520512e82.js" crossorigin="anonymous"></script>
+
+    <!-- Import JS -->
+    <script src="assets/js/main.js"></script>
     
 </head>
 <body>
-    <div class="sidebar">
-        <ul class="nav">
-            <li><a href="/profile.html">Profile</a></li>
-            <li><a href="/index.html">Home</a></li>
-            <li><a class="active" href="/dashboard.html">Dashboard</a></li>
-            <li><a href="/faq.html">FAQ</a></li>
-        </ul>
 
-        <ul class="social_networks">
-            <li><a target="_blank" href="https://vk.com/id95657334"><i class="fab fa-vk"></i></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100010090093391"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a target="_blank" href="https://www.instagram.com/malbertodicabria"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </div>
+    <!-- Sidebar at the left - Leftbar -->
+    <aside id="leftbar" class="leftbar">
+        <!-- Navigational Menu -->
+        <div class="nav-menu">
+            <a class="nav-menu__link" href="profile.html"><span>Profile</span></a>
+            <a class="nav-menu__link" href="index.html"><span>Home</span></a>
+            <a class="nav-menu__link nav-menu__link--active" href="dashboard.html"><span>Dashboard</span></a>
+            <a class="nav-menu__link" href="faq.html"><span>FAQ</span></a>
+            <a class="nav-menu__link nav-menu__link--separate-top" href="motivation.html"><span>Motivation</span></a>
+            <a class="nav-menu__link" href="profession.html"><span>Profession</span></a>
+            
+        </div>
+        <!-- VK, Facebook and Instagram links -->
+        <div class="social-links">
+            <a class="social-links__link" target="_blank" href="https://vk.com/id95657334"><i class="fab fa-vk"></i></a>
+            <a class="social-links__link" target="_blank" href="https://www.facebook.com/profile.php?id=100010090093391"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-links__link" target="_blank" href="https://www.instagram.com/malbertodicabria"><i class="fab fa-instagram"></i></a>
+        </div>
+    </aside>
+    <!-- Button to open leftbar when the screen is small -->
+    <i id="leftbar-open" class="leftbar-open fas fa-bars"></i>
+
 
     <div class="page">
-        <div class="content">
-            
-            <div class="study_monitor_with_header">
-                <h1>Dashboard.</h1>
-                <p>Here you can find the overview of a study course I am taking, some links to important services and a progress bar of my study!</p>
-                <h2>Study Monitor</h2>
-                <p></p>
-                <div class="study_monitor">
-                    <table>
-                        <tr>
-                            <th>Quartile</th>
-                            <th>Courses</th>
-                            <th>EC</th>
-                            <th>Exam Type</th>
-                            <th>Grade</th>
-                        </tr>
-            
-            
-                        
-                        <tbody>
-                            <tr>
-                                <td rowspan="3">1</td>
-                                <td>Programme and Career Orientation</td>
-                                <td class="td_with_ec" >2,5</td>
-                                <td>Assessment</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                            <tr>
-                                <td>Computer Science Basics</td>
-                                <td class="td_with_ec" >7,5</td>
-                                <td>Written</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                            <tr>
-                                <td >Programming Basics</td>
-                                <td class="td_with_ec" >5</td>
-                                <td >Case Study</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        </tbody>
-                        <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
-            
-            
-            
-                        <tbody>
-                            <tr>
-                                <td rowspan="3">2</td>
-                                <td rowspan="2">Object Oriented Programming</td>
-                                <td class="td_with_ec" rowspan="2">10</td>
-                                <td>Case Study</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                            <tr>
-                                <td>Project</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                            <tr>
-                                <td >Professional Skills 1</td>
-                                <td class="td_with_ec" >2,5</td>
-                                <td >Portfolio</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        </tbody>
-                        <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
-            
-            
-                        <tbody>
-                            <tr>
-                                <td rowspan="7">3</td>
-                                <td rowspan="2">Framework Project 1</td>
-                                <td class="td_with_ec" rowspan="2">5</td>
-                                <td>Portfolio (1/2)</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td>Portfolio (2/2)</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td>Framework Development 1</td>
-                                <td class="td_with_ec" >5</td>
-                                <td>Case Study</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td>Professional Working Environment</td>
-                                <td class="td_with_ec" >2,5</td>
-                                <td>Assessment</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td rowspan="3">Professional Skills 2</td>
-                                <td class="td_with_ec" rowspan="3">2,5</td>
-                                <td>Portfolio</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td>Written (1/2)</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td>Written (2/2)</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        </tbody>
-                        <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
-            
-            
-                        <tbody>
-                            <tr>
-                                <td rowspan="5">4</td>
-                                <td>Framework Project 2</td>
-                                <td class="td_with_ec" >5</td>
-                                <td>Portfolio</td>   
-                                <td class="sm_grade"></td>
-                            </tr>
+        <h1>Dashboard.</h1>
+        <p>Here you can find the overview of a study course I am taking, some links to important services and a progress bar of my study!</p>
+        
+        <h2>Study Monitor</h2>
+        <section class="study_monitor"> 
+            <table>
+                <tr>
+                    <th>Quartile</th>
+                    <th>Courses</th>
+                    <th>EC</th>
+                    <th>Exam Type</th>
+                    <th>Grade</th>
+                </tr>
                 
-                            <tr>
-                                <td>Framework Development 2</td>
-                                <td class="td_with_ec" >5</td>
-                                <td>Portfolio</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                
-                            <tr>
-                                <td rowspan="3">Professional Skills 3</td>
-                                <td class="td_with_ec" rowspan="3">2,5</td>
-                                <td>Portfolio</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                
-                            <tr>
-                                <td>Written (1/2)</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                
-                            <tr>
-                                <td >Written (2/2)</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        </tbody>
-                        <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
-            
-            
-                        <tbody>
-                            <tr class="table_extra">
-                                <td rowspan="2">Extra :)</td>
-                                <td>HZ Personality</td>
-                                <td class="td_with_ec" >2,5</td>
-                                <td>Portfolio</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                
-                            <tr>
-                                <td >IT Personality</td>
-                                <td class="td_with_ec" >2,5</td>
-                                <td >Portfolio</td>
-                                <td class="sm_grade"></td>
-                            </tr>
-                        </tbody>
-                        
-                    </table>
-                </div>
-            </div>
-            
+                <tbody>
+                    <tr>
+                        <td rowspan="3">1</td>
+                        <td>Programme and Career Orientation</td>
+                        <td class="td_with_ec" >2,5</td>
+                        <td>Assessment</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Computer Science Basics</td>
+                        <td class="td_with_ec" >7,5</td>
+                        <td>Written</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td >Programming Basics</td>
+                        <td class="td_with_ec" >5</td>
+                        <td >Case Study</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                </tbody>
+                <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
 
-            <div class="study_progress">
-                <h2>Study Progress Bar</h2>
-                <div class="progress_bar">
-                    <table>
-                        <tr>
-                            <td style="width: 75%">45 EC</td><td>60 EC</td>
-                        </tr>
-                    </table>
-                    <div>
-                        <div class="bar_nbsa"></div>
-                        <div style="width:66.66%"><span>40/60 EC</span></div>
-                    </div>
-                </div>
-            </div>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">2</td>
+                        <td rowspan="2">Object Oriented Programming</td>
+                        <td class="td_with_ec" rowspan="2">10</td>
+                        <td>Case Study</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Project</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td >Professional Skills 1</td>
+                        <td class="td_with_ec" >2,5</td>
+                        <td >Portfolio</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                </tbody>
+                <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
 
-            <div class="relevant_links">
-                <h2>Relevant links:</h2>
+                <tbody>
+                    <tr>
+                        <td rowspan="7">3</td>
+                        <td rowspan="2">Framework Project 1</td>
+                        <td class="td_with_ec" rowspan="2">5</td>
+                        <td>Portfolio (1/2)</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio (2/2)</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Framework Development 1</td>
+                        <td class="td_with_ec" >5</td>
+                        <td>Case Study</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Professional Working Environment</td>
+                        <td class="td_with_ec" >2,5</td>
+                        <td>Assessment</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Professional Skills 2</td>
+                        <td class="td_with_ec" rowspan="3">2,5</td>
+                        <td>Portfolio</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Written (1/2)</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Written (2/2)</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                </tbody>
+                <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="5">4</td>
+                        <td>Framework Project 2</td>
+                        <td class="td_with_ec" >5</td>
+                        <td>Portfolio</td>   
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Framework Development 2</td>
+                        <td class="td_with_ec" >5</td>
+                        <td>Portfolio</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Professional Skills 3</td>
+                        <td class="td_with_ec" rowspan="3">2,5</td>
+                        <td>Portfolio</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Written (1/2)</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td >Written (2/2)</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                </tbody>
+                <tr class="tbody_divider""><td></td><td></td><td></td><td></td><td></td></tr>
                 
-                <ol>
-                    <li><a target="_blank" href="https://learn.hz.nl/my/">Learn</a></li>
-                    <li><a target="_blank" href="https://portal.hz.nl/en/">MyHZ</a></li>
-                    <li><a target="_blank" href="https://apps.hz.nl/rooster">Timetable</a></li>
-                    <li><a target="_blank" href="https://apps.hz.nl/angular/studievoortgang/studiestatus">Study Progress</a></li>
-                    <li><a target="_blank" href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen">Education and Examination Regulations</a></li>
-                    <li><a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp - A website to learn programming</a></li>
-                    <li><a target="_blank" href="https://www.w3schools.com/">W3schools - FreeCodeCamp alternative</a></li>
-                </ol>
+                <tbody>
+                    <tr class="table_extra">
+                        <td rowspan="2">Extra :)</td>
+                        <td>HZ Personality</td>
+                        <td class="td_with_ec" >2,5</td>
+                        <td>Portfolio</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                    <tr>
+                        <td >IT Personality</td>
+                        <td class="td_with_ec" >2,5</td>
+                        <td >Portfolio</td>
+                        <td class="sm_grade"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <h2>Study Progress Bar</h2>
+        <div class="progress_bar">
+            <table>
+                <tr>
+                    <td style="width: 75%">45 EC</td><td>60 EC</td>
+                </tr>
+            </table>
+            <div>
+                <div class="bar_nbsa"></div>
+                <div style="width:66.66%"><span>40/60 EC</span></div>
             </div>
- 
         </div>
-        <div class="footer">By Iosif with Love <i class="far fa-kiss-wink-heart"></i></div>
+
+        <h2>Relevant links:</h2>
+        <ol class="relevant_links">
+            <li><a target="_blank" href="https://learn.hz.nl/my/">Learn</a></li>
+            <li><a target="_blank" href="https://portal.hz.nl/en/">MyHZ</a></li>
+            <li><a target="_blank" href="https://apps.hz.nl/rooster">Timetable</a></li>
+            <li><a target="_blank" href="https://apps.hz.nl/angular/studievoortgang/studiestatus">Study Progress</a></li>
+            <li><a target="_blank" href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen">Education and Examination Regulations</a></li>
+            <li><a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp - A website to learn programming</a></li>
+            <li><a target="_blank" href="https://www.w3schools.com/">W3schools - FreeCodeCamp alternative</a></li>
+        </ol>
+
+        <!-- Footer -->
+        <footer class="footer">*** Made by Iosif ***</footer>
     </div>
 </body>
 </html>
