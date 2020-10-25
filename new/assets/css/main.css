@@ -34,9 +34,9 @@ body {
 .page > h3,
 .page > p,
 .page > ul > li {
-    line-height: 1.5rem;
-    letter-spacing: 0.15rem;
-    word-spacing: 0.3rem;
+    
+    letter-spacing: 0.1rem;
+    word-spacing: 0.25rem;
     margin: 0;
 }
 
@@ -44,15 +44,19 @@ body {
     margin-bottom: 3rem;
 }
 
-.page > h2,
+.page > h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+}
 .page > h3 {
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .page > p {
     text-align: justify;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3rem;
 }
 
 /*** Rarer used typography, for images and links ***/
