@@ -186,10 +186,13 @@ span.citation {
     padding: 2rem;
 }
 
+/* Role Grid Area Naming */
+.company-role__abbreviation {grid-area: abbreviation}
+.company-role__title        {grid-area: title}
+.company-role__description  {grid-area: description}
+
 /* Role title. Like "Software Engineer" */
 .company-role__title {
-    grid-area: title;
-
     margin: 0;
     font-size: 1.2rem;
     text-align: left;
@@ -201,8 +204,6 @@ span.citation {
 
 /* Role abbrebiation. Like "SWE" */
 .company-role__abbreviation {
-    grid-area: abbreviation;
-
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -212,13 +213,11 @@ span.citation {
     font-family: monospace;
 
     color: rgb(187, 187, 187);
-
 }
 
 /* Role desciprtion */
 .company-role__description {
     margin: 0;
-    grid-area: description;
 }
 
 /* hover */

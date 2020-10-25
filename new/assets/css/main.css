@@ -182,9 +182,9 @@ body {
     }
 }
 @media only screen and (max-width: 768px) {
-    /* Move content behind the defaultly-hidden leftbar and decrease padding */
+    /* Move content behind the defaultly-hidden leftbar and decrease side padding, increase top padding */
     .page {
-        padding: 4rem 5vw 2rem;
+        padding: 5rem 5vw 2rem;
         margin-left: 0;
     }
 
@@ -200,7 +200,7 @@ body {
     }
     
     /* Darken page when leftbar is opened */
-    .leftbar--opened + .leftbar-open {
+    .leftbar.leftbar--opened + .leftbar-open {
         top:0;
         left:0;
         width: 100vw;
@@ -210,20 +210,29 @@ body {
         background-color: rgba(0, 0, 0, 0.74);
     }
 
-    /* Position and style opening button */
-    .leftbar-open {
+    /* Position and style button to open leftbar */
+    .leftbar:not(.leftbar--opened) + .leftbar-open {
         /* Positioning */
-        position: fixed;
-        top: 1rem;
-        left: 1rem;
-        z-index: 1;
+        top: 0.5rem;
+        left: 0.5rem;
 
         /* Sizing */
+        padding: 1rem;
         font-size: 1.7rem;
 
         /* Styling */
-        color: rgb(68, 185, 221);
+        border-radius: 10%;
+        color: rgb(9, 134, 172);
         transition: color 50ms linear;
+        backdrop-filter: blur(35px) opacity(0.5);
     }
+
+    /* for button and darkening */
+    .leftbar-open {
+        /* for positioning */
+        position: fixed;
+        z-index: 1; 
+    }
+    /* ligthten buttton on hover */
     .leftbar-open:hover { color: rgb(128, 207, 221) } 
 }

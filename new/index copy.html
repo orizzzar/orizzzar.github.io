@@ -3,99 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>Profession</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:ital,wght@0,200;0,400;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&amp;family=Open+Sans:ital,wght@0,400;0,600;1,400&amp;family=Roboto+Mono:ital,wght@0,200;0,400;1,400&amp;family=Roboto:ital,wght@0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="assets/css/profession.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Import FA Icons -->
     <script src="https://kit.fontawesome.com/0520512e82.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/icons.css">
-    
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="a/favicon.ico" type="image/x-icon">
+    <!-- Import JS -->
+    <script src="assets/js/main.js"></script>
     
 </head>
 <body>
-    <div class="sidebar">
-        <ul class="nav">
-            <li><a href="/profile.html">Profile</a></li>
-            <li><a class="active" href="/index.html">Home</a></li>
-            <li><a href="/dashboard.html">Dashboard</a></li>
-            <li><a href="/faq.html">FAQ</a></li>
-            <li><a href="/profession_with_old.html">Profession</a></li>
-        </ul>
 
-        <ul class="social_networks">
-            <li><a target="_blank" href="https://vk.com/id95657334"><i class="fab fa-vk"></i></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100010090093391"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a target="_blank" href="https://www.instagram.com/malbertodicabria"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </div>
+    <!-- Sidebar at the left - Leftbar -->
+    <aside id="leftbar" class="leftbar">
+        <!-- Navigational Menu -->
+        <div class="nav-menu">
+            <a class="nav-menu__link" href="profile.html"><span>Profile</span></a>
+            <a class="nav-menu__link nav-menu__link--active" href="index.html"><span>Home</span></a>
+            <a class="nav-menu__link" href="dashboard.html"><span>Dashboard</span></a>
+            <a class="nav-menu__link" href="faq.html"><span>FAQ</span></a>
+            <a class="nav-menu__link nav-menu__link--separate-top" href="motivation.html"><span>Motivation</span></a>
+            <a class="nav-menu__link" href="profession.html"><span>Profession</span></a>
+            
+        </div>
+        <!-- VK, Facebook and Instagram links -->
+        <div class="social-links">
+            <a class="social-links__link" target="_blank" href="https://vk.com/id95657334"><i class="fab fa-vk"></i></a>
+            <a class="social-links__link" target="_blank" href="https://www.facebook.com/profile.php?id=100010090093391"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-links__link" target="_blank" href="https://www.instagram.com/malbertodicabria"><i class="fab fa-instagram"></i></a>
+        </div>
+    </aside>
+    <!-- Button to open leftbar when the screen is small -->
+    <i id="leftbar-open" class="leftbar-open fas fa-bars"></i>
+
 
     <div class="page">
-        <div class="content">
-            
-            <div>
-                <h1>
-                    Hello, World!
-                </h1>
-    
-                <p>My name is <b>Iosif Zhytnikau</b> and I am first-year
-                    ICT-HBO student at HZ University.
-                </p>
-                <p>
-                    Below you will find why I chose ICT-HBO programme
-                </p>
-                <p>
-                    If you want to know more about me<br>
-                    <a href="/profile.html">jump to Profile page</a>
-                </p>
-            </div>
+        <h1>Hello, World!</h1>
+        <p>My name is <strong>Iosif Zhytnikau</strong> and I am first-year ICT-HBO student at HZ University.</p>
+        <p>Below you will find why I chose ICT-HBO programme</p>
+        <p>If you want to know more about me, <br>then <a class="page__link" href="/profile.html">jump to the Profile page</a></p>
+        <img class="page__image" src="assets/img/home/me.jpg" alt="Picture of me">
+        <p class="page__image-name">Me 1.1</p>
+        <h2>What is this website ?</h2>
+        <p>This is my Portfolio website. I've done it as an assignment for HZ University. As this is my first website (I had experience with HTML and PHP but it was not about creating websites), so, as this is my first website, don't expect it to be perfect, but I think it's quite nice.</p>
+        <h2>Why did I choose ICT, and, specifically, ICT-HBO?</h2>
+        <p>Programming has been my hobby since I was 14 years old; and, in order to learn how to program, I did not go to any facilities, but did a lot of self-studying.</p>
+        <p>I watched YouTube lessons, read books, articles, and documentations.</p>
+        <p>And I found out that nowadays any theoretical material can be found easily, unaided.</p>
+        <p>Therefore, I used to think that there was no need to study at a university to be a successful programmer.</p>
+        <p>But there are a lot of essential skills that cannot be acquired at home, skills concerning practice, team-working, communication and more.<br> What is the point of knowing things when I cannot efficiently apply them?</p>
+        <p>What I like about HZ is that it is based on applying knowledge.<br> And with a complement of my willing to self-study it is a place to fully realize my potential.</p>
 
-            <div>
-                <img style="box-shadow: 0px 0px 16px 2px rgb(0,0,0,0.2)" src="imgs/me.jpg" alt="">
-                <p>Me 1.1</p>
-            </div>
 
-            <div>
-                <h2>
-                    What is this website ?
-                </h2>
-                <p>
-                    This is my Portfolio website. I've done it as an assignment for HZ University. As this is my first website(I had experience
-                    with HTML and PHP but it was not about creating websites), so, as this is my first website, don't expect it to be perfect, but I 
-                    think it's quite nice.
-                </p>
-            </div>
-
-            <div>
-                <h2>
-                    Why did I choose ICT, and, specifically, ICT-HBO?
-                </h2>
-                
-                
-                <p>
-                    Programming has been my hobby since I was 14 years old; and, in order to learn how to program, I did not go to any facilities, but did a lot of self-studying.
-                </p> <p>
-                    I watched YouTube lessons, read books, articles, and documentations.
-                </p> <p>
-                    And I found out that nowadays any theoretical material can be found easily, unaided.
-                </p> <p>
-                    Therefore, I used to think that there was no need to study at a university to be a successful programmer.
-                </p>
-                
-                
-                <p>But there are a lot of essential skills that cannot be acquired at home, skills concerning practice, team-working, communication and more.<br> What is the point of knowing things when I cannot efficiently apply them?</p>
-
-                <p>What I like about HZ is that it is based on applying knowledge.<br> And with a complement of my willing to self-study it is a place to fully realize my potential.</p>
-            </div>
-
-        </div>
-        <div class="footer">By Iosif with Love <i class="far fa-kiss-wink-heart"></i></div>
+        <!-- Footer -->
+        <footer class="footer">*** Made by Iosif ***</footer>
     </div>
-    
-    
 </body>
 </html>
-
