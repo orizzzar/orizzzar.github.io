@@ -38,6 +38,7 @@ body {
     letter-spacing: 0.1rem;
     word-spacing: 0.25rem;
     margin: 0;
+
 }
 
 .page > h1 {
@@ -45,7 +46,9 @@ body {
 }
 
 .page > h2 {
-    margin-top: 3.5rem;
+    border-top: 2px solid rgb(240, 240, 240);
+    padding-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
 .page > h3 {
@@ -127,6 +130,8 @@ body {
     text-decoration: none;
     font-size: 1rem;
     color: black;
+
+    transition: background-color 300ms cubic-bezier(0,1.15,1,.96);
 }
 
 .social-links {
@@ -238,9 +243,10 @@ body {
 
         /* Styling */
         border-radius: 10%;
-        color: rgb(9, 134, 172);
+        color: rgb(20, 164, 207);
         transition: color 50ms linear;
-        backdrop-filter: blur(35px) opacity(0.5);
+        backdrop-filter: blur(50px) opacity(0.2);
+        box-shadow: 0 0 16px -8px rgba(131, 131, 131, 0.74);
     }
 
     /* for button and darkening */
