@@ -33,12 +33,17 @@ body {
 .page > h2,
 .page > h3,
 .page > p,
-.page > ul > li {
+.page > ul > li,
+.page > ol > li {
     
     letter-spacing: 0.1rem;
     word-spacing: 0.25rem;
     margin: 0;
 
+}
+.page > ul > li,
+.page > ol > li {
+    margin: 1rem 0;
 }
 
 .page > h1 {
@@ -62,6 +67,7 @@ body {
     line-height: 1.3rem;
 }
 
+
 /*** Rarer used typography, for images and links ***/
 .page__image {
     width: 100%;
@@ -73,6 +79,7 @@ body {
     text-align: center;
     font-size: 0.75rem;
     margin: 0;
+    margin-top: 0.5rem;
 }
 .page__link {
     text-decoration: none;
